@@ -1,0 +1,369 @@
+#events-section {
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5rem;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    /* padding: 21px; */
+    padding-left: 9rem;
+    padding-right: 9rem;
+}
+
+.full-eventDetails {
+    /* border: 2px solid yellow; */
+    width: 100%;
+    position: relative;
+    padding: 8px;
+    height: 63vh;
+    /* margin-bottom: 5rem; */
+
+}
+
+#events-pointer {
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    /* line-height: 3; */
+    margin-top: 4rem;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.eventImages img {
+    width: 100%;
+}
+
+.eventImages {
+    margin-bottom: 20px;
+}
+
+.identifire-title {
+    color: gray;
+    font-size: 15px;
+    letter-spacing: 3px;
+
+}
+
+.title-heading {
+    font-size: 45px;
+}
+
+.event-date {
+    height: 5rem;
+    width: 5rem;
+    text-align: center;
+    background-color: black;
+    color: white;
+    z-index: 200;
+    position: absolute;
+    left: 50px;
+    top: -31px;
+    padding: 10px;
+
+}
+
+.date {
+    font-size: 2.2rem;
+}
+
+.month {
+    font-size: 1rem;
+}
+
+.details {
+    /* border: 2px solid gray; */
+}
+
+.details-heading {
+    font-size: 24px;
+}
+
+.event-description {
+    font-weight: 300;
+    margin-top: 1rem;
+    font-size: 16px;
+}
+
+/* This style for responsive */
+@media (max-width:730px) {
+    #events-section {
+        flex-direction: column;
+        padding-left: 3rem;
+        padding-right: 3rem;
+
+    }
+
+    .full-eventDetails {
+
+        height: 92vh;
+        /* margin-bottom: 5rem; */
+    }
+
+    .event-date {
+        height: 4rem;
+        width: 4rem;
+    }
+
+    .date {
+        font-size: 1.5rem;
+    }
+
+    .month {
+        font-size: 0.8rem;
+    }
+}
+
+@media(max-width:439px) {
+    .full-eventDetails {
+
+        height: 59vh;
+        /* margin-bottom: 5rem; */
+    }
+}
+
+
+/* contact form */
+.contact {
+    /* border: 2px solid red; */
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding-left: 10rem;
+    padding-right: 8rem;
+    /* padding-top: 2rem; */
+}
+
+#contact-form-title {
+    height: 6rem;
+    display: flex;
+    align-items: left;
+    /* line-height: 3; */
+    /* margin-top: 4rem; */
+    flex-direction: column;
+    text-align: left;
+
+}
+
+.contact-form #name, #phone {
+
+    height: 2.782vw;
+    width: 16rem;
+    padding: 0.586vw 0;
+    border-radius: 0;
+    background-color: transparent !important;
+    color: #fff !important;
+    box-shadow: none !important;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px dashed #fff !important;
+    
+}
+
+.cst_selectPick {
+    background: black;
+    color: gray;
+    border-bottom: 2px dotted gray;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+#row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 9.5rem;
+}
+
+.contact-form {
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) * -.5);
+    margin-left: calc(var(--bs-gutter-x) * -.5);
+}
+
+
+#email-div {
+    display: flex;
+    justify-content: left;
+    margin-top: 2rem;
+}
+.adition-options1{
+    display: flex;
+    justify-content: lef;
+    margin-top: 2rem;
+}
+.last2 {
+    height: 2.782vw;
+    width: 45rem;
+    padding: 0.586vw 0;
+    border-radius: 0;
+    background-color: transparent !important;
+    color: #fff !important;
+    box-shadow: none !important;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px dashed #fff !important;
+}
+
+#filter-option {
+    height: 2rem;
+    background-color: black;
+    color: gray;
+    border: none;
+    font-size: 1.2rem;
+}
+
+#aditional {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    margin-top: 2rem;
+    /* margin-left: 9rem;  */
+    width: 100%;
+}
+
+.adition-options {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    margin-bottom: 1rem;
+}
+
+#aditional textarea {
+    background-color: black;
+    width: 45rem;
+    height: 3rem;
+    margin-bottom: 4rem;
+    border-top: 0;
+    border-bottom: 1.5px dotted gray;
+    border-left: 0;
+    border-right: 0;
+}
+
+
+
+.submit {
+    display: flex;
+    justify-content: center;
+}
+
+#submit {
+    margin-left: 16px;
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    -webkit-transform-origin: left top;
+    -moz-transform-origin: left top;
+    -ms-transform-origin: left top;
+    -o-transform-origin: left top;
+    transform-origin: left top;
+    -webkit-transition: color .2s, -webkit-transform .4s;
+    transition: color .2s, -webkit-transform .4s;
+    -o-transition: color .2s, -o-transform .4s;
+    -moz-transition: color .2s, transform .4s, -moz-transform .4s;
+    transition: color .2s, transform .4s;
+    transition: color .2s, transform .4s, -webkit-transform .4s, -moz-transform .4s, -o-transform .4s
+}
+
+@media (min-width:1200px) {
+    #submit {
+        font-size: 18px
+    }
+}
+
+#submit::after {
+    content: attr(data-text);
+    display: block;
+    position: absolute;
+    top: 150%;
+    left: 0;
+    -webkit-transform: skewY(5deg);
+    -moz-transform: skewY(5deg);
+    -ms-transform: skewY(5deg);
+    -o-transform: skewY(5deg);
+    transform: skewY(5deg);
+    -webkit-transform-origin: left top;
+    -moz-transform-origin: left top;
+    -ms-transform-origin: left top;
+    -o-transform-origin: left top;
+    transform-origin: left top;
+    -webkit-transition: -webkit-transform .4s;
+    transition: -webkit-transform .4s;
+    -o-transition: -o-transform .4s;
+    -moz-transition: transform .4s, -moz-transform .4s;
+    transition: transform .4s;
+    transition: transform .4s, -webkit-transform .4s, -moz-transform .4s, -o-transform .4s
+}
+
+
+
+@media (max-width:986px) {
+    #row {
+        gap: 0;
+        flex-direction: column;
+    }
+
+    #phoneNum {
+        display: inline-flex;
+
+    }
+
+    .contact-form #name, #phone {
+        width: 100%;
+        height: 5.782vw;
+        margin-bottom: 0.5rem;
+    }
+
+    #email {
+        height: 5.782vw;
+
+    }
+
+    .last2 {
+        /* height: 2.782vw; */
+        width: 45rem;
+        padding: 0.586vw 0;
+        border-radius: 0;
+        background-color: transparent !important;
+        color: #fff !important;
+        box-shadow: none !important;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px dashed #fff !important;
+        height: 5.782vw;
+
+    }
+    #aditional{
+        margin-top: 0;
+    }
+
+    #adition-options {
+        width: 100%;
+    }
+
+    #aditional textarea {
+        width: 100%;
+    }
+}
+
+.adition-options1 {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+}
+@media (max-width:780px) {
+    .contact{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}

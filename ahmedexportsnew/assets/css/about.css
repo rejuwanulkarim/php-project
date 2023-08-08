@@ -1,0 +1,194 @@
+.section1{
+  width: 88%;
+  margin: auto;
+}
+.about_section1_body{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.woner_speech{
+  font-size: 17px;
+}
+
+
+.woner_image{
+  
+  width: 26rem;
+  height: 20rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cb-btn_menu-box {
+  color: black;
+}
+.about_us {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: left;
+  width: 88%;
+  margin: auto;
+}
+.about_heading {
+  width: 100%;
+  text-align: left;
+  font-size: 4rem;
+  font-weight: bold;
+  position: relative;
+  margin-bottom: 1rem;
+}
+.about_heading::after {
+  content: "";
+  position: absolute;
+  width: 18rem;
+  height: 3px;
+  /* color: red; */
+  bottom: 0;
+  background: black;
+  left: 0;
+}
+.address {
+  /* border: 2px solid red; */
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.address * {
+  /* border: 2px solid green; */
+}
+
+.land_address {
+  font-size: 1.5rem;
+  width: 28%;
+}
+#map_direction {
+  position: relative;
+  /* line-break:strict; */
+  white-space: nowrap;
+}
+#map_direction::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background-color: black;
+  right: -24rem;
+  top: 13px;
+}
+#map_direction::after {
+  content: "";
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  border: 11px solid black;
+  right: -23.7rem;
+  transform: rotate(45deg);
+  border-bottom: 0;
+  border-left: 0;
+}
+#google_map_location {
+  height: 300px;
+  width: 400px;
+}
+@media (max-width: 1322px) {
+  #map_direction::before {
+    visibility: hidden;
+  }
+  #map_direction::after {
+    visibility: hidden;
+  }
+}
+@media (max-width: 1041px) {
+  .address {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  #google_map_location {
+    width: 100%;
+  }
+  .land_address {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
+.motivetion_heading h2 {
+  margin-bottom: 1rem;
+  position: relative;
+}
+.motivetion_heading h2::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  width: 16%;
+  height: 2px;
+  background-color: black;
+  left: 0;
+}
+
+.motivetion {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  margin-bottom: 5rem;
+}
+.motivisions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 17%;
+}
+.motive {
+  padding: 15px;
+  background-color: black;
+  color: white;
+  border-radius: 9px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  
+}
+.motive::before{
+     content: ""; 
+     position: absolute;  
+     background: url('/_images/inverted_coma.jpg');
+     background-repeat: no-repeat;
+     width: 1rem;
+     height: 1rem;
+}
+.inverted{
+height: 2rem;
+width: 2rem;
+}

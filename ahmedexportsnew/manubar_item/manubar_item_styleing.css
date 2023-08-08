@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Stoke:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+html {
+    height: 100%;
+    min-width: 100%;
+}
+body {
+    min-height: 100%;
+    min-width: 100%;
+    background-color: rgb(213, 141, 32);
+    z-index: 1;
+}
+
+#maintenance-div
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 12rem; */
+    padding-top: 15rem;
+    /* height: 2rem; */
+    flex-direction: column;
+    /* border: 2px solid red; */
+    z-index: 2;
+}
+.test-image{
+    font-size: 15rem;
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    /* font-size: 24px; */
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+ #maintenance-div p{
+    width: auto;
+    font-size: 3rem;
+    text-align: center;
+}
+
+
+#dot {
+    position:absolute;
+    width:10px;
+    height:10px;
+    border-radius: 50%;
+    background-color: rgb(108, 21, 21);
+    /* transition: 0.1s; */
+    scroll-behavior: smooth;
+}
+.hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: auto; */
+    width: 45px;
+    height: 45px;
+    background-color: red;
+    transition: width 2s;
+}
+.hover:hover{
+    width: 400px;
+}
