@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body::after {
+    content: "";
+    background: linear-gradient(#000000ba, #000000ba), url(../_images/webImages/profile/background.jpg);
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+.profile_photo {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+}
+
+._row {
+    display: flex;
+    flex-direction: row;
+}
+
+.b_white {
+    border: 2px solid white;
+}
+
+.p_5 {
+    padding: 5px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.radius_20 {
+    border-radius: 20px;
+}
+
+
+
+.justify_center {
+    justify-content: center;
+}
+
+.align_center {
+    align-items: center;
+}
+
+/* sub menu for profile */
+
+.top_slider {
+    padding-bottom: 2rem;
+    width: 13rem;
+    border-radius: 0 0 5px 5px;
+    position: absolute;
+    right: 0;
+    top: 4rem;
+    background-color: #151B1E;
+    animation: tobuttomslider;
+    z-index: 10;
+    animation-duration: 0.5s;
+}
+
+@keyframes tobuttomslider {
+    from {
+        top: -25rem;
+    }
+
+    to {
+        top: 4rem;
+    }
+}
+
+@keyframes toTopslider {
+    from {
+        top: 4rem;
+    }
+
+    to {
+        top: -25rem;
+    }
+}
+
+
+.profile_nav {
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 1rem;
+    align-items: center;
+    background-color: #151B1E;
+    position: sticky;
+    top: 0;
+    z-index: 11;
+}
+
+
+
+.nav_logo {
+    height: 100%;
+    font-size: 2rem;
+    /* font-weight: bold; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+.profile_image {
+    height: 2.5rem;
+    /* width: 6rem; */
+    border-radius: 50%;
+}
+
+
+.profile_svg_icon {
+    height: 1rem;
+    width: 2rem;
+    fill: var(--svg_color);
+}
+
+
+
+
+.profile_sub_nav {
+    width: 13rem;
+    position: absolute;
+    right: 0;
+    top: -25rem;
+    animation: toTopslider;
+    animation-duration: 0.5s;
+    background-color: #151B1E;
+    border-radius: 0 0 5px 5px;
+}
+
+
+
+.profile_bar {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 2rem;
+    margin: auto;
+    align-items: flex-start;
+    padding: 0 1rem;
+}
+
+.profile_bar a {
+    text-decoration: none;
+    color: white;
+}
+
+.profile_bar li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.8rem;
+
+}
+
+.profile_side_bar_svg {
+    height: 1rem;
+    width: 1rem;
+    fill: var(--profile_svg_color);
+
+}
+
+
+
+.profile_section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 6rem;
+    /* border: 2px solid red; */
+}
+
+
+.profile_card {
+    width: 40rem;
+    margin: auto;
+    /* height: 44vh; */
+    border: 2px solid green;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: white;
+    overflow: hidden;
+    background: white;
+}
+
+.profile_card * {
+    z-index: 2;
+    color: black;
+}
+
+.profile_card h2 {
+    text-align: center;
+    padding-bottom: 1rem;
+    /* z-index: 10; */
+    color: white;
+}
+
+.profile_card::after {
+    content: "";
+    position: absolute;
+    background-color: #1880B1;
+    width: 100%;
+    height: 5.5rem;
+    top: 0;
+    z-index: 1 !important;
+    left: 0;
+    color: blue;
+    object-fit: cover;
+    font-size: 12rem;
+    /* opacity: 0.5; */
+    text-align: center;
+
+}
+
+.profile_card::before {
+    content: "";
+    position: absolute;
+    background-color: #1880B1;
+    width: 100%;
+    height: 2.5rem;
+    bottom: 0;
+    z-index: 1 !important;
+    left: 0;
+    color: blue;
+    object-fit: cover;
+    font-size: 12rem;
+    /* opacity: 0.5; */
+    text-align: center;
+
+}
+
+/* school card image */
+.profile_school_logo {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+}
+
+.card_left {
+    height: auto;
+    width: 50%;
+    /* border: 2px solid red; */
+}
+
+.card_right {
+    width: 50%;
+    height: 100%;
+    /* border: 2px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.details {
+    width: 100%;
+    height: 100%;
+}
+
+.profile_input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    flex-grow: 1;
+}
+
+/* .profile_input:disabled{
+    color: white;
+} */
+
+.card_profile_photo {
+    width: 45%;
+    /* height: 45%; */
+}
+
+.barcode {
+    position: absolute;
+    bottom: 5px;
+    right: 3px;
+    width: auto;
+    background-color: white;
+    padding: 0.3rem;
+}
+
+
+
+/* certificate section styleing */
+.certificate {
+    max-width: 45rem;
+    max-height: 100rem;
+}
+
+
+/* marquee  */
+.profile_marquee {
+    color: red;
+}
+
+.profile_edit svg {
+    height: 1rem;
+    width: 1rem;
+    /* cursor: pointer; */
+}
+
+
+.profile_edit {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    z-index: 4;
+}
+
+
+
+/* readmission style  */
+
+.step_bar{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+.step_bar span{
+    height: 2rem;
+    width: 2rem;
+    border: 2px solid aqua;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: aqua;
+}
+

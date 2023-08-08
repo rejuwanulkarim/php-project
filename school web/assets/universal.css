@@ -1,0 +1,110 @@
+:root {
+    --svg_color: black;
+}
+
+
+
+.flex_row {
+    flex-direction: row;
+}
+
+.flex_col {
+    flex-direction: column !important;
+}
+
+.flex_justify_C {
+
+    justify-content: center;
+}
+
+.flex_justify_s_a {
+    justify-content: space-around;
+}
+
+._flex {
+    display: flex;
+}
+
+.flex_align_c {
+    align-items: center;
+
+}
+
+.b_white {
+    background-color: white;
+}
+
+.c_white {
+    color: white;
+}
+
+
+
+.p_5 {
+    padding: 5px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.radius_20 {
+    border-radius: 20px;
+}
+
+.h_full {
+    height: 100%;
+}
+
+.mb_2 {
+    margin-bottom: 2rem;
+}
+
+.pb_1-5 {
+    padding-bottom: 1.5rem;
+}
+
+.h-20 {
+    height: 20rem;
+    transition: 0.5s;
+}
+
+.none {
+    display: none;
+}
+
+.w-10-t-1{
+    width: 10%;
+    transition: 0.5s;
+}
+.w-90-t-1{
+    width: 90%;
+    transition: 0.5s;
+}
+
+.mt_2{
+    margin-top: 2rem;
+}
+.g1{
+    gap: 1rem;
+}
+.g2{
+    gap: 2rem;
+}
+.w_13{
+    width: 13rem;
+}
+.w_27{
+    width: 27rem;
+}
+.w_17{
+    width: 17rem;
+}
+.h_19{
+    height: 19rem;
+
+}
+
+.g_2{
+    gap: 2rem;
+}

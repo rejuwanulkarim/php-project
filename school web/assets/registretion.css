@@ -1,0 +1,203 @@
+[pagename=registretion]::before {
+  content: "";
+  background: linear-gradient(#000000ba, #000000ba), url(../_images/webImages/registretion/singup/background.jpg);
+  position: fixed;
+  top: 0;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+  filter: blur(4px);
+}
+
+.registretion_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  /* border: 2px solid red; */
+}
+
+.inner_body {
+  margin: auto;
+  width: 70%;
+  height: auto;
+  border: 2px solid green;
+  border-radius: 10px;
+  background: #0005;
+  padding: 10px 0;
+}
+
+.date_input {
+  cursor: pointer;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 100%;
+}
+
+/* heading */
+.registretion_heading {
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.student_area {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  /* align-items: center; */
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+.registretion_input {
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid white;
+  outline: none;
+  color: white;
+  width: auto;
+  flex-grow: 1;
+}
+
+.registretion_form_body {
+  color: white;
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(23rem, auto));
+  margin: auto;
+  padding: 10px;
+  align-items: center;
+  width: 100%;
+}
+
+.registretion_lable {
+  width: unset;
+}
+
+/* universal class */
+._row {
+  display: flex;
+  flex-direction: row;
+}
+
+.gap_4 {
+  gap: 4rem;
+}
+
+._col {
+  display: flex;
+  flex-direction: column;
+}
+
+.align_center {
+  align-items: center;
+}
+
+/* gender input style */
+.gender_input {
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  border: 2px solid green;
+  overflow: hidden;
+  width: 100%;
+}
+
+.gender_input [type=radio] {
+  appearance: none;
+  color: white;
+  cursor: pointer;
+  /* padding: 0 10px; */
+  width: 33.35%;
+  text-align: center;
+}
+
+.gender_input [type=radio]::before {
+  content: attr(value);
+  padding: 5px;
+  display: inline-block;
+  /* border-radius: 10px; */
+}
+
+.gender_input [type=radio]:checked::before {
+  background-color: green;
+  width: 100%;
+  flex-grow: 1;
+}
+
+/* number tag default none */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+.submit_btn {
+  width: 30%;
+  background-color: green !important;
+  border: none;
+  color: white !important;
+}
+
+#admissionclass option {
+  margin: 40px;
+  background: white;
+  color: black;
+  /* text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4); */
+}
+
+.inner_body form {
+  overflow: hidden;
+  padding: 0.3rem;
+}
+
+#user-alert {
+  color: red;
+  position: relative;
+  display: none;
+}
+
+#email {
+  /* border-bottom: 2px solid red; */
+  /* color: red; */
+}
+
+.submit_btn:disabled {
+  cursor: not-allowed;
+  background-color: gray !important;
+
+}
+
+.user-error {
+  height: 2rem;
+  width: 10rem;
+  border-radius: 5px;
+  padding: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ff5555;
+  color: white;
+  position: fixed;
+  z-index: 12;
+}
+

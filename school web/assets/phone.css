@@ -1,0 +1,704 @@
+@media (max-width: 250px) {
+  body {
+    width: 100%;
+  }
+
+  .mandatory_alert {
+    font-size: 0.7rem;
+    color: red;
+  }
+
+  .login-div::before {
+    font-size: 0.8rem;
+    left: 18px;
+  }
+
+  .personal_details_div::after {
+    font-size: 0.8rem;
+    left: 6px;
+    top: -15px;
+    width: 50%;
+  }
+
+  .personal_details_div {
+    padding: 7px;
+  }
+
+  .form_input {
+    width: 100%;
+  }
+
+  .select_st {
+    height: 1.2rem;
+    font-size: 0.8rem;
+    width: 100%;
+  }
+
+  .guardian_section::before {
+    font-size: 0.8rem;
+    left: 6px;
+    width: 50%;
+  }
+
+  .guardian_section {
+    padding: 7px;
+  }
+
+  .checkBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+  }
+
+  #education_details::before {
+    font-size: 0.8rem;
+    left: 6px;
+    width: 87%;
+    top: -20px;
+  }
+
+  #education_proof {
+    margin: 0;
+  }
+
+  .file_type_alert {
+    font-size: 0.8rem;
+    color: red;
+    width: 100%;
+  }
+
+  .form_upload_table_head_text {
+    font-size: 0.7rem;
+  }
+
+  .table_body_element {
+    font-size: 0.7rem;
+  }
+
+  #upload_documents::after {
+    left: 13px;
+    font-size: 0.8rem;
+  }
+
+  #education_proof {
+    margin: 0;
+  }
+
+  .course_body {
+    margin: none;
+  }
+
+  .course_heading {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    width: 100%;
+    min-width: auto;
+  }
+
+  .gallery {
+    margin: auto;
+  }
+
+  /* contact page  */
+  .contact_form_item {
+    flex-direction: column;
+  }
+
+  .contact_item {
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .contact_quote {
+    padding: 2px;
+    font-size: 0.8rem;
+  }
+
+  .contact_form {
+    width: 100%;
+  }
+
+  .contact_footer {
+    flex-direction: column;
+    position: relative;
+    margin-top: 1rem;
+  }
+
+  .copywrite {
+    font-size: 0.8rem;
+  }
+
+  .contact_form_item {
+    overflow: hidden;
+  }
+
+  .icon {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  .contact_svg_icon {
+    height: 1.5rem;
+  }
+
+  .contact_text {
+    font-size: 0.8rem;
+  }
+
+  .contact_form_item {
+    gap: 1rem;
+  }
+
+  .contact_card {
+    padding: 6px 15px;
+  }
+
+  /* about page */
+  .footer_section {
+    flex-direction: column !important;
+    overflow-x: hidden;
+    gap: 1.5rem;
+  }
+
+  .inner {
+    font-size: 0.5rem;
+    width: 100%;
+    align-items: center;
+  }
+
+  .about_image {
+    display: none;
+  }
+
+  .about_details {
+    padding: 0.4rem;
+  }
+
+  .mid {
+    width: 100%;
+  }
+
+  .mid2 {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .right {
+    width: 100%;
+    font-size: 0.5rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .quick_contact_form_icones {
+    width: 0.9rem;
+    height: 0.9rem;
+  }
+
+  /* readmition page  */
+  .readmition_section {
+    padding: 0 0.5rem;
+  }
+
+  /* registretion page  */
+  .registretion_heading {
+    font-size: 0.9rem;
+  }
+
+  .registretion_lable {
+    font-size: 0.6rem;
+  }
+
+  .inner_body {
+    width: 100%;
+  }
+
+  .registretion_section {
+    padding: 0 0.7rem;
+  }
+
+  .gender_input [type="radio"] {
+    font-size: 10px;
+  }
+
+  .date_input {
+    font-size: 11px;
+  }
+
+  [pagename="admition_page"] .submit_btn {
+    width: 90%;
+    height: 1.5rem;
+    font-size: 13px;
+  }
+
+  /* contact page  */
+  [pagename="contactpage_body"] .contact_body {
+    flex-direction: column;
+  }
+
+  /* contact page  */
+  .contact_icons {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .contact_svg_icone {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  .contact_clicker_div {
+    height: auto;
+  }
+
+  /* student and others profile. page name profile.php */
+  .profile_card {
+    padding: 2px;
+    width: 100%;
+  }
+
+  .profile_school_logo {
+    left: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .profile_card h2 {
+    font-size: 0.6rem;
+  }
+
+  .profile_card::after {
+    height: 2.5rem;
+  }
+
+  .profile_card label {
+    font-size: 8px;
+  }
+
+  .profile_input {
+    font-size: 8px;
+  }
+
+  .card_right {
+    width: 30%;
+  }
+
+  .card_left {
+    width: 70%;
+  }
+
+  .card_profile_photo {
+    position: relative;
+    right: 0;
+  }
+  .gallery-card {
+    min-width: auto;
+    width: 100%;
+  }
+}
+
+/* screen size 249-500px */
+
+@media (min-width: 249px) and (max-width: 500px) {
+  .course_heading {
+    font-size: 2rem;
+  }
+  .card {
+    width: 100%;
+    min-width: auto;
+  }
+  .gallery-card {
+    min-width: auto;
+    width: 100%;
+  }
+  .course_body {
+    width: 100%;
+    padding: 0 9px;
+    margin: auto;
+  }
+
+  .gallery_heading {
+    font-size: 2rem;
+  }
+
+  .gallery {
+    width: 100%;
+    padding: 0 9px;
+  }
+
+  .copywrite {
+    font-size: 1rem;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .contact_heading {
+    font-size: 2rem;
+  }
+
+  .contact_form_item {
+    flex-direction: column;
+  }
+
+  .contact_item {
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .contact_quote {
+    padding: 2px;
+    font-size: 0.8rem;
+  }
+
+  .contact_form {
+    width: 100%;
+  }
+
+  .contact_footer {
+    flex-direction: column;
+    position: relative;
+    margin-top: 1rem;
+  }
+
+  .copywrite {
+    font-size: 0.8rem;
+  }
+
+  .contact_form_item {
+    overflow: hidden;
+  }
+
+  .icon {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  .contact_svg_icon {
+    height: 1.5rem;
+  }
+
+  .contact_text {
+    font-size: 0.8rem;
+  }
+
+  .contact_form_item {
+    gap: 1rem;
+  }
+
+  .contact_card {
+    padding: 6px 15px;
+  }
+
+  /* about page  */
+  .footer_section {
+    flex-direction: column !important;
+    overflow-x: hidden;
+    gap: 1.5rem;
+  }
+
+  .inner {
+    font-size: 0.8rem;
+    width: 100%;
+    align-items: center;
+  }
+
+  .about_image {
+    display: none;
+  }
+
+  .about_details {
+    padding: 0.8rem;
+  }
+
+  .mid {
+    width: 100%;
+  }
+
+  .mid2 {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .right {
+    width: 100%;
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .quick_contact_form_icones {
+    width: 1.1rem;
+    height: 1.1rem;
+  }
+
+  /* readmition page  */
+  .readmition_section {
+    padding: 0 2rem;
+  }
+
+  /* registretion page */
+  .inner_body {
+    margin: 0 16px;
+    width: 100%;
+  }
+
+  .gender_input {
+    justify-content: center;
+    gap: 10%;
+  }
+
+  /* student and others profile. page name profile.php */
+  .profile_card {
+    margin: 0 0.2rem;
+    width: 100%;
+  }
+
+  .profile_school_logo {
+    left: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .profile_card h2 {
+    font-size: 0.6rem;
+    /* padding: 1.2rem 0; */
+  }
+
+  .profile_card::after {
+    height: 3.5rem;
+  }
+
+  .profile_card label {
+    font-size: 10px;
+  }
+
+  .profile_input {
+    font-size: 10px;
+  }
+
+  .card_right {
+    width: 30%;
+  }
+
+  .card_left {
+    width: 70%;
+  }
+
+  .card_profile_photo {
+    position: relative;
+    right: 0;
+  }
+}
+
+@media (min-width: 499px) and (max-width: 1000px) {
+  .course_heading {
+    font-size: 3rem;
+  }
+
+  .course_body {
+    width: 90%;
+  }
+
+  .gallery {
+    width: 100%;
+  }
+
+  /* contact page */
+  .contact_footer {
+    position: relative;
+  }
+
+  .contact_text {
+    font-size: 0.9rem;
+  }
+
+  .icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .contact_svg_icon {
+    height: 1.5rem;
+  }
+
+  /* about page */
+  .inner {
+    width: 100%;
+  }
+
+  .about_details {
+    padding: 1rem;
+  }
+
+  .inner {
+    height: auto;
+  }
+
+  .para {
+    font-size: 0.8rem;
+  }
+
+  .footer_section {
+    flex-direction: column;
+  }
+
+  .left {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .mid {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .mid2 {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .right {
+    width: 100%;
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+  }
+  .card {
+    min-width: none;
+  }
+}
+
+/* this media is for registretion page */
+@media (max-width: 600px) {
+  ._row {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .registretion_input {
+    width: 100%;
+  }
+
+  .registretion_form_body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* for contact page  */
+  .contact_body {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .contact_main_sec {
+    height: auto;
+  }
+
+  .profile_card {
+    width: 100%;
+  }
+}
+
+/* for contact page  */
+
+@media (max-width: 1000px) {
+  .contact_body {
+    /* flex-direction: column; */
+    align-items: center;
+    /* gap: 2rem; */
+  }
+
+  .contact_quote {
+    width: 100%;
+  }
+
+  .contact_clicker {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .notice_body {
+    width: 100%;
+    margin: auto;
+  }
+
+  .notice_list {
+    font-size: 0.8rem;
+  }
+
+  .notice_table {
+    font-size: 0.8rem;
+  }
+}
+
+/* this media is for gallery section  */
+
+@media (max-width: 600px) {
+  .brand {
+    position: fixed;
+    top: 3px;
+    left: 3px;
+  }
+  .nav-list {
+    position: absolute;
+    top: 3rem;
+    width: 100%;
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+  .nav-item {
+    width: 100%;
+    text-align: left;
+    background: #2d3135;
+    font-size: 1rem;
+  }
+
+  .normal-hambarger {
+    width: 3rem;
+    height: 40px;
+    background-color: white;
+    padding: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    cursor: pointer;
+    position: fixed;
+    top: 3px;
+    right: 3px;
+    border-radius: 4px;
+  }
+  .normal-hambarger span {
+    width: 80%;
+    position: absolute;
+    height: 0.3rem;
+    background-color: black;
+    transition: 0.3s;
+  }
+  .normal-hambarger span:nth-child(1) {
+    top: 6px;
+  }
+  .normal-hambarger span:nth-child(2) {
+    top: 18px;
+  }
+  .normal-hambarger span:nth-child(3) {
+    top: 30px;
+  }
+  .exec-hambarger span:nth-child(1) {
+    transform: rotateZ(45deg);
+    top: 18px;
+  }
+  .exec-hambarger span:nth-child(2) {
+    display: none;
+  }
+  .exec-hambarger span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 18px;
+  }
+}

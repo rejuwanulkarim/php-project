@@ -1,0 +1,603 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bg-dark {
+  background-color: #212529;
+}
+
+/* navbar style */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 3rem;
+  overflow: hidden;
+  transition: 0.3s;
+  width: 100%;
+}
+.nav-open {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 21rem;
+  transition: 0.3s;
+  position: fixed;
+  width: 100%;
+}
+.navbar-brand {
+  padding: 0.5rem;
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+}
+.brand {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  align-items: center;
+}
+.nav-item {
+  padding: 0.5rem;
+}
+.nav-link {
+  text-decoration: none;
+  color: #fff9;
+}
+.nav-link:hover {
+  color: #fff4;
+}
+.active {
+  color: white !important;
+}
+h5 {
+  font-size: unset !important;
+}
+/* navbar style before 600px  */
+.normal-hambarger {
+  display: none;
+}
+
+
+.homepage_body::after {
+  content: "";
+  background-image: linear-gradient(#000000ba, #000000ba),
+    url(../classes/kimberly-farmer-lUaaKCUANVI-unsplash.jpg);
+  position: fixed;
+  top: 0;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+  filter: blur(3px);
+}
+
+/* form mandatory alert  */
+.mandatory_alert {
+  color: red;
+  margin-bottom: 1.2rem;
+}
+
+/* upload file type alert */
+.file_type_alert {
+  color: red !important;
+  font-size: 0.9rem;
+}
+
+.section-1 {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-1-text {
+  width: 100%;
+  /* padding: 13rem; */
+  padding-right: 5rem;
+  text-align: right;
+}
+
+.section-1-text:last-child {
+  color: white;
+  font-size: 19px;
+}
+
+#section-1-headig {
+  width: 100%;
+  font-size: 4rem;
+  color: white;
+}
+
+/* here all courses detail css */
+
+.courses_section {
+  height: 100vh;
+}
+
+@media (min-width: 625px) and (max-width: 695px) {
+  .section-1-text {
+    padding: 2rem;
+  }
+}
+
+.course {
+  display: flex;
+  flex-direction: column;
+  width: 19rem;
+  overflow: hidden;
+  height: 20rem;
+  margin: auto;
+  gap: 1rem;
+  color: white;
+  border-radius: 10px;
+  box-shadow: -1px 1px 28px -4px;
+  border: 1px solid white;
+}
+
+.course_image {
+  width: 100%;
+  height: 48%;
+  border-bottom: 2px solid white;
+}
+
+.course_title {
+  border-bottom: 2px solid white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 1.2rem;
+}
+
+.course_text {
+  color: white;
+}
+
+.course_details {
+  display: flex;
+  flex-direction: row;
+}
+
+.teachers_details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid white;
+}
+
+.department_and_name {
+  display: flex;
+  flex-direction: column;
+}
+
+.teachers_image {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+}
+
+.teachers_name {
+  font-size: 1.2rem;
+}
+
+.teachers_department {
+  font-size: 0.8rem;
+  color: gray;
+}
+
+@media (max-width: 470px) {
+  .section-1-text {
+    padding: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 300px) {
+  .section-1-text p:nth-child(1) {
+    font-size: 1.5rem;
+  }
+  .section-1-text p:nth-child(2) {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 500px) {
+  #section-1-headig {
+    font-size: 2rem;
+  }
+}
+
+.form_upload_table {
+  width: 38rem;
+}
+
+.document_upload_input {
+  width: 10rem;
+}
+
+.course_heading {
+  width: 100%;
+  font-size: 4rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  margin-top: 1rem;
+}
+
+.course_body {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 20rem;
+  margin: auto;
+  width: 100%;
+  gap: 2rem;
+}
+
+.card {
+  margin: auto;
+  width: 19rem;
+  height: 20rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border-radius: 9px;
+  min-width: 19rem;
+  box-shadow: 2px 5px 13px -8px white;
+}
+
+.card-img {
+  height: 10rem;
+  width: 100%;
+}
+
+.card-body {
+  background: #212529;
+  color: white !important;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+
+.card_button {
+  background-color: black !important;
+  color: #ffffffb3 !important;
+  height: 2rem;
+  width: 6rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.card_button:hover {
+  color: white !important;
+  background-color: #00000080 !important;
+  /* transition: 1s; */
+}
+
+/* school gallery section */
+.gallery {
+  width: 100%;
+}
+
+.gallery-heading {
+  font-size: 4rem;
+  /* border-top: 1px solid white; */
+  border-bottom: 1px solid white;
+  margin-top: 2rem;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  border-top: 2px solid white;
+}
+.galery-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 9px;
+  overflow: hidden;
+  padding: 0.2rem;
+  gap: 4rem;
+  flex: 1 1 20rem;
+}
+.gallery-card {
+  margin: auto;
+  width: 19rem;
+  height: 16rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border-radius: 9px;
+  min-width: 19rem;
+  box-shadow: 2px 5px 13px -8px white;
+}
+
+.img-color {
+  /* display: block; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: red;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+/* .gallery-visotor:hover {
+  color: white !important;
+  background-color: #00000080 !important;
+} */
+.gallery-card :hover + .img-color {
+  /* display: none !important; */
+  background-color: green;
+}
+
+/* footer */
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(146deg, black, transparent, black);
+  padding: 1rem 1rem;
+  margin-top: 2rem;
+  gap: 1rem;
+  height: 20%;
+}
+
+.web_logo {
+  height: 4rem;
+  border-radius: 50%;
+}
+
+.footer_first_sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.copywrite {
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 600;
+}
+
+.footer_second_sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+  gap: 1rem;
+}
+
+.footer_contact_address {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  color: gray;
+  font-weight: bold;
+}
+
+.icone {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_contact_email {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.location_icone {
+  width: 3rem;
+  height: 3rem;
+  fill: white;
+}
+
+.phone_icone {
+  width: 3rem;
+  height: 3rem;
+  fill: white;
+}
+
+.footer_contact_phone {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: space-around; */
+  gap: 1rem;
+  color: gray;
+  font-weight: bold;
+}
+
+.email_icone {
+  width: 3rem;
+  height: 3rem;
+  fill: white;
+}
+
+.footer_contact_email {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: space-around; */
+  gap: 1rem;
+  color: gray;
+  font-weight: bold;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* contact page */
+.contact_section {
+  height: 80%;
+  width: 100%;
+  /* background-color: red; */
+}
+
+.contact_section {
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+  color: white;
+}
+
+[pagename="contact"]::after {
+  content: "";
+  background-image: linear-gradient(#000000ba, #000000ba),
+    url(../_images/webImages/contact_page/background.jpeg);
+  position: fixed;
+  top: 0;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+/* contact page contact form */
+.contact_form {
+  width: 18rem;
+  height: 20rem;
+  border: 2px solid white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+.submit_btn {
+  background-color: white !important;
+  color: black !important;
+  width: 11rem;
+  height: 2rem;
+  font-weight: bold;
+  /* margin-top: 1rem; */
+  border-radius: 13px;
+}
+
+.contact_form_item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.contact_input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: transparent;
+  color: white;
+  outline: none;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.contact_item {
+  /* border: 2px solid rebeccapurple; */
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.position_static {
+  position: sticky !important;
+  top: 0 !important;
+}
+
+.gallery-viewer {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  position: fixed;
+  bottom: 15px;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  display: none;
+}
+.viewer-image {
+  width: 95%;
+}
+.image-action-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 2rem;
+}
+.previous-btn {
+  left: 0;
+}
+.next-btn {
+  right: 0;
+}
+.gallery-images {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: contain;
+  top: 0;
+}
+.viewer-image {
+  /* width: 100%; */
+  position: relative;
+  top: 0;
+  /* max-width: 100%; */
+  max-width: 36rem;
+}
+.gallery-closer {
+  position: absolute;
+  top: 10%;
+  right: 4px;
+  font-size: 2rem;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+/* .gallery-viewer * {
+  border: 2px solid red;
+} */

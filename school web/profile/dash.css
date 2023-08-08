@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.dash_preview{
+    border: 2px solid red;
+    position: relative;
+}
+.first_circle{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    border: 2px solid red;
+    position: absolute;
+    top: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+}
+.second_circle{
+    /* top: 4px; */
+    position: relative;
+    height: 4.3rem;
+    border: 2px solid red;
+    width: 4.3rem;
+    border-radius: 50%;
+    background-color: white;
+}

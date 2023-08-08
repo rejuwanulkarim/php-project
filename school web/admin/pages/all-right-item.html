@@ -1,0 +1,636 @@
+<div class="dashboard">
+    <div class="cards">
+        <div class="counter-cards">
+            <div class="counter-card-data">
+                <span data="2300">2300</span>
+                <p>Total Students</p>
+            </div>
+            <svg class="counter-svg-icon">
+                <use href="http://localhost/karim/school web/svg_logos/svg_icons.svg#Student List"></use>
+            </svg>
+        </div>
+        <div class="counter-cards">
+            <div class="counter-card-data">
+                <span data="120">120</span>
+                <p>New Applicant</p>
+            </div>
+            <svg class="counter-svg-icon">
+                <use href="http://localhost/karim/school web/svg_logos/svg_icons.svg#Student List"></use>
+            </svg>
+        </div>
+        <div class="counter-cards">
+            <div class="counter-card-data">
+                <span data="100">100</span>
+                <p>Pending Payment</p>
+            </div>
+            <svg class="counter-svg-icon">
+                <use href="http://localhost/karim/school web/svg_logos/svg_icons.svg#rupee"></use>
+            </svg>
+        </div>
+        <div class="counter-cards">
+            <div class="counter-card-data">
+                <span data="12">12</span>
+                <p>Payment Fail/Pending</p>
+            </div>
+            <svg class="counter-svg-icon">
+                <use href="http://localhost/karim/school web/svg_logos/svg_icons.svg#rupee"></use>
+            </svg>
+        </div>
+    </div>
+
+    <div class="recent">
+        <div class="recent-head">
+            <h4 class="recent-head">Some Recent Transesion</h4>
+            <a href="#">Show More</a>
+        </div>
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>Sl No</th>
+                    <th>Student Id</th>
+                    <th>Name</th>
+                    <th>Contact No</th>
+                    <th>Payment Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>JHM20230202</td>
+                    <td>Md Rejuwanul Karim</td>
+                    <td>7478919026</td>
+                    <td>Success</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>JHM20230202</td>
+                    <td>Md Rejuwanul Karim</td>
+                    <td>7478919026</td>
+                    <td>Success</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>JHM20230202</td>
+                    <td>Md Rejuwanul Karim</td>
+                    <td>7478919026</td>
+                    <td>Success</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+    </div>
+
+
+
+
+</div>
+
+
+
+
+
+
+<div class="student-list">
+    <div class="serches">
+        <form class="flex-row-reverse">
+
+            <input type="text" name="student-id" placeholder="Enter student id" maxlength="20" class="search-input">
+            <input type="button" value="Search">
+        </form>
+    </div>
+    <div class="second-serches">
+        <form class="flex-row search-form" action="./index.php">
+
+            <div class="flex-row">
+                <label for="Class">Class:&nbsp;</label>
+                <select name="class" id="class" class="search-select">
+                    <?php
+                    $sql = "SELECT * FROM `class`";
+                    $result = mysqli_query($connection, $sql);
+                    while ($row = mysqli_fetch_row($result)) {
+                        $class = $row[1];
+                        if ($class != "") {
+                            echo "<option for='$class'>$class</option>";
+                        }
+                    }
+                    ?>
+                </select>
+
+            </div>
+            <div class="flex-row">
+                <label for="Sec">Section:&nbsp;</label>
+                <select name="section" id="class" class="search-select">
+                    <?php
+                    $sql = "SELECT * FROM class";
+                    $result = mysqli_query($connection, $sql);
+                    while ($row = mysqli_fetch_row($result)) {
+                        $section = $row[2];
+                        echo $section . "<br>";
+                        if ($section != "") {
+                            echo "<option for='$section'>$section</option>";
+                        }
+                    }
+                    ?>
+                </select>
+
+            </div>
+
+            <div class="flex-row">
+                <label for="Sec">Year:&nbsp;</label>
+                <!-- <select name="section" id="class" class="search-select"> -->
+                <input type="date" name="date" id="year">
+                <!-- </select> -->
+
+            </div>
+
+
+            <input type="button" value="Search" id="search-btn">
+        </form>
+    </div>
+
+
+
+    <div class="student-table">
+        <h4 class="table-heding">Search Results</h4>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Slno</th>
+                    <th>ID</th>
+                    <th>Profile Photo</th>
+                    <th>Name</th>
+                    <th>Class</th>
+                    <th>Section</th>
+                    <th>Roll NO</th>
+                    <th>Father's Name</th>
+                    <th>Phone No</th>
+                    <th>Address</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody class="student-table-body">
+
+
+
+            </tbody>
+        </table>
+    </div>
+    <div class="modal-effect" id="editModal">
+        <form class="edit-modal">
+            <!-- <div class="flex-row"> -->
+
+            <h3>Update Details</h3>
+            <span id="update-modal-hidener">&times;</span>
+            <!-- </div> -->
+            <div class="flex-row w-100">
+                <label for="name">Name:&nbsp;</label>
+                <input type="text" name="student-name" id="student-name">
+            </div>
+            <div class="flex-row w-100">
+                <label for="fname">Father's Name:&nbsp;</label>
+                <input type="text" name="father-name" id="father-name">
+            </div>
+            <div class="flex-row w-100">
+                <label for="class">Class:&nbsp;</label>
+                <input type="text" name="class" id="class">
+            </div>
+            <div class="flex-row w-100">
+                <label for="roll">Roll No:&nbsp;</label>
+                <input type="number" name="roll" id="roll">
+            </div>
+            <div class="flex-row w-100">
+                <label for="sec">Section:&nbsp;</label>
+                <input type="text" name="section" id="section">
+            </div>
+            <div class="flex-row w-100">
+                <label for="phone">Phone No:&nbsp;</label>
+                <input type="number" name="phone" id="phone">
+            </div>
+            <div class="flex-row w-100">
+                <label for="address">Address:&nbsp;</label>
+                <input type="text" name="address" id="address">
+            </div>
+
+            <button type="submit" class="w-100 update-btn" id="update-btn">Update</button>
+        </form>
+
+    </div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="admin">
+    <?php
+    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+        $admin_uname =   mysqli_real_escape_string($connection, $_POST['admin-email']);
+        $password = mysqli_real_escape_string($connection, $_POST['password']);
+        $cpassword = mysqli_real_escape_string($connection, $_POST['cpassword']);
+        $phone = mysqli_real_escape_string($connection, $_POST['phone']);
+        $name = mysqli_real_escape_string($connection, $_POST['name']);
+        $nupper = strtoupper($name);
+        $nsplit = str_split($nupper);
+        $phonesplit = str_split($phone);
+        $date = date("Y");
+        $id = "";
+        if (strlen($name) < 3) {
+            $id = "JHM" . $nsplit[0] . $date . $phonesplit[0] . $phonesplit[1];
+        } else {
+
+            $id = "JHM" . $nsplit[0] . $nsplit[1] . $date . $phonesplit[0] . $phonesplit[1];
+        }
+
+
+
+
+        $checksql = "SELECT * FROM `admins` WHERE `email`= '$admin_uname'";
+        $checkresult = mysqli_query($connection, $checksql);
+        if ($password == $cpassword) {
+            if (mysqli_num_rows($checkresult) > 0) {
+                echo ' <div class="data-insert-alert">User Alredy Exist <span id="hidener">&times;</span></div>';
+            } else {
+                $sql = "INSERT INTO `admins` (`slno`, `id`, `name`, `email`, `phone`, `status`, `password`, `create_date`, `last_log`) VALUES (NULL, '$id', '$name', '$admin_uname', '$phone', '', '$password', CURRENT_TIME(), CURRENT_TIME());";
+                $result = mysqli_query($connection, $sql);
+                // header("location:./index.php");
+                if ($result) {
+                    echo ' <div class="data-insert-alert" style="border:none;color:white;background-color:green;">User Added success <span id="hidener">&times;</span></div>';
+                }
+            }
+        } else {
+            echo "password not match";
+        }
+    }
+
+    ?>
+    <div class="admin-modal">
+        <form action="./index.php" method="POST" class="admin-create-form">
+            <span id="admin-modal-hidner">&times;</span>
+            <h4>Add New Admin</h4>
+            <div class="flex-row">
+                <label for="Gmail">Gmail:&nbsp;</label>
+                <input type="email" name="admin-email" placeholder="Enter New Admin Gmail" maxlength="50"
+                    class="admin-create-input" id="username">
+                <!-- <svg class="loading-icon">
+                    <use href="http://localhost/karim/school web/svg_logos/svg_icons.svg#loading"></use>
+                </svg> -->
+            </div>
+            <div class="flex-row">
+                <label for="Gmail">Name:&nbsp;</label>
+                <input type="text" name="name" placeholder="Enter Admin Name" maxlength="50" class="admin-create-input">
+            </div>
+            <div class="flex-row">
+                <label for="Gmail">Phone:&nbsp;</label>
+                <input type="number" name="phone" placeholder="Enter New Admin Phone" maxlength="50"
+                    class="admin-create-input">
+            </div>
+            <div class="flex-row">
+                <label for="Password">Password:&nbsp;</label>
+                <input type="password" name="password" placeholder="Enter Admin Password" maxlength="50"
+                    class="admin-create-input admin-passwords">
+            </div>
+            <div class="flex-row">
+                <label for="CPassword">Confirm-Password:&nbsp;</label>
+                <input type="password" name="cpassword" placeholder="Confirm Password" maxlength="50"
+                    class="admin-create-input admin-passwords">
+            </div>
+            <div class="flex-row">
+                <input type="checkbox" name="checbox" id="checbox">&nbsp;
+                <label for="show password">Show Password</label>
+            </div>
+            <div class="flex-row error"></div>
+            <input type="submit" value="Add Admin" id="admin-add-btn" disabled>
+        </form>
+    </div>
+
+    <div class="admin-quick-search">
+        <input type="text" name="admin-search" id="admin-search" placeholder="Enter Admin Id" maxlength="20" required>
+        <input type="button" value="Search" id="admin-search-btn">
+    </div>
+    <div class="admin-list">
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Slno</th>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Status</th>
+                    <th>Phone No</th>
+                    <th>Date Of Creation</th>
+                    <th>Last Login</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody class="admin-table-body">
+
+
+
+            </tbody>
+        </table>
+        <button id="admin-create-btn"><span>&#43;&nbsp;</span><span>Create New Admin</span></button>
+    </div>
+</div>
+
+
+
+
+<div class="announcement-section">
+    <?php
+    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+        $title = mysqli_escape_string($connection, $_POST['notice-title']);
+        $notice_type = mysqli_escape_string($connection, $_POST['notice-type']);
+
+        $pic = $_FILES['notice-file']['tmp_name'];
+
+        $date = date("d-m-Y");
+        // $date =current()
+        $notice_path = "../classes/images/notice";
+        $tz = 'Asia/Kolkata';
+        date_default_timezone_set($tz);
+        $time = date("h-i-sa");
+
+        $name = "$title=$date-$time";
+        $title2 = "$title=$date-$time";
+        // $title2 = ;
+        $filename = $_FILES['notice-file']['name'];
+
+        $ext = pathinfo($filename, PATHINFO_EXTENSION);
+        $filetype = "";
+        // echo $ext . "<br>";
+        $subtitle = str_replace(' ', '_', $title2);
+        $subtitle = str_replace(':;', '_', $title2);
+        
+        if ($ext == 'png' || $ext == 'jpeg' || $ext == 'pdf') {
+
+            if ($ext == 'png'  || $ext == 'jpeg') {
+                $filetype = "jpg";
+            } elseif ($ext == 'pdf') {
+                $filetype = "pdf";
+            }
+            if (file_exists("$notice_path/$name.png") == true) {
+                move_uploaded_file($pic, "$notice_path/$title2.$filetype");
+
+                $sql = "INSERT INTO `notices` (`slno`,`title`,`subtitle`,`type`,`filetype`,`date`) VALUES (NULL,'$title','$subtitle','$notice_type','$filetype','$date');                        ";
+                $result = mysqli_query($connection, $sql);
+                if ($result) {
+                    echo "<div id='alert'>
+                    <span>Notice Update</span>
+                    <span id='alert-hidener'>&times;</span>
+                </div>
+                <script>
+
+                    let admin_hidener = document.getElementById('alert-hidener')
+                    let alertdiv = document.getElementById('alert')
+                    admin_hidener.addEventListener('click', () => {
+                        alertdiv.style.display = 'none'
+                    })
+                </script>";
+                }
+            } else {
+                move_uploaded_file($pic, "$notice_path/$title2.$filetype");
+                $sql = "INSERT INTO `notices` (`slno`,`title`,`subtitle`,`type`,`filetype`,`date`) VALUES (NULL,'$title','$subtitle','$notice_type','$filetype','$date');                        ";
+                $result = mysqli_query($connection, $sql) or dir("die");
+                echo "<div id='alert'>
+                <span>Notice Update</span>
+                <span id='alert-hidener'>&times;</span>
+            </div>
+            <script>
+
+                let admin_hidener = document.getElementById('alert-hidener')
+                let alertdiv = document.getElementById('alert')
+                admin_hidener.addEventListener('click', () => {
+                    alertdiv.style.display = 'none'
+                })
+            </script>";
+            }
+        } else {
+            echo "<div class='error'>Only Upload(JPG,JPEG,PDF&PNG)</div>";
+        }
+    }
+
+
+
+    ?>
+    <form action="index.php" method="POST" id="notice-update-form" enctype="multipart/form-data">
+        <div class="flex-row">
+            <label for="Notice Title">Title:&nbsp;</label>
+            <input type="text" name="notice-title" class="form-input" placeholder="Please Enter Notice Title"
+                maxlength="30">
+        </div>
+        <div class="flex-row">
+            <label for="Notice Type">Title:&nbsp;</label>
+            <select name="notice-type" id="notice-type" class="form-input">
+                <option value="">Select Notice Type</option>
+                <option value="Genarel">Genarel</option>
+                <option value="Poletices">Poletices</option>
+                <option value="Others">Others</option>
+            </select>
+        </div>
+        <div class="flex-row">
+            <label for="upload notice">Upload Notice:&nbsp;</label>
+            <input type="file" name="notice-file" class="form-input-file">
+        </div>
+        <input type="submit" value="Publish">
+    </form>
+
+
+    <div class="notice-list">
+        <h4 class="heading">Previous Notices:</h4>
+
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Slno</th>
+                    <th>Notice Title</th>
+                    <th>Upload Date</th>
+                    <th>Action</th>
+
+                </tr>
+            </thead>
+            <tbody id="notice-table-body">
+
+
+
+            </tbody>
+        </table>
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+<div class="setting">
+
+    <?php
+
+    $sql = "SELECT * FROM `setting` ";
+    $result = mysqli_query($connection, $sql);
+    $readmission_value = "";
+    $newadmission_value = "";
+    $student_result = "";
+    while ($row = mysqli_fetch_assoc($result)) {
+        $readmission_value = $row['readmission'];
+        $newadmission_value = $row['new_admission'];
+        $student_result = $row['student_result'];
+    }
+
+
+    // readmission check condition end
+    function checker($checker_value)
+    {
+        $status = '';
+        if ($checker_value == 0) {
+            $status = '';
+        } elseif ($checker_value == 1) {
+            $status = 'checked';
+        }
+        return $status;
+    }
+    // New admission check condition start
+
+    // New admission check condition end
+    echo " <div id='readmition'>
+        <details class='setting-head'>
+            <summary>Readmission. </summary>
+            <p class='settings-description'>Do you turn off this feature any student Can\'t readdmit on your school </p>
+        </details>
+        
+            <label class='switch'>
+        
+            <input type='checkbox' name='readmission-setting' class='setting-checkbox' onclick='btnstatus(\"readmission\")' id='setting-1' " . checker($readmission_value) . ">
+            <span class='slider'></span>
+            </label>
+            
+            </div>
+
+    <div id='marksheet'>
+        <details class='setting-head'>
+            <summary>Student result</summary>
+            <p class='settings-description'>Do you turn off this feature any student Can't download his/her Won marksheet </p>
+        </details>
+        <label class='switch'>
+            <input type='checkbox' name='marksheet' class='setting-checkbox'  onclick='btnstatus(\"student_result\")' id='setting-2' " . checker($student_result) . " >
+            <span class='slider'></span>
+        </label>
+    </div>
+
+    <div id='marksheet'>
+        <details class='setting-head'>
+            <summary>New Admission. </summary>
+            <p class='settings-description'>Do you turn off this feature any new student Can't apply </p>
+        </details>
+        <label class='switch'>
+            <input type='checkbox' name='marksheet' class='setting-checkbox'  onclick='btnstatus(\"new_admission\")' id='setting-3' " . checker($newadmission_value) . " >
+            <span class='slider'></span>
+        </label>
+    </div>
+    ";
+
+    echo "<div class='contact-info'>
+        <h4 class='form-heading'>Contact Details:-</h4>
+        </div>
+
+
+
+        <table id='contact-info'>
+        <thead>
+            <tr>
+                <th>Sl No</th>
+                <th>Contact Type</th>
+                <th>Info</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id='contact-data'>";
+
+
+    $sql = "SELECT * FROM `contact_info`";
+    $result = mysqli_query($connection, $sql);
+
+    $num = mysqli_num_rows($result);
+    if ($num > 0) {
+        $serialno = 0;
+        while ($row = mysqli_fetch_assoc($result)) {
+            $dbslno = $row['slno'];
+            $contact_type = $row['contacttype'];
+            $contact_info = $row['contactinfo'];
+            $serialno = $serialno + 1;
+            echo "<tr>
+            <td>$serialno</td>
+            <td>$contact_type</td>
+            <td class='contact-data' data='jhdhsb'><span>$contact_info</span></td>
+            <td><svg class='edit-btn' onclick='contactedit($dbslno,this,\"$contact_type\")'>
+                    <use href='http://localhost/karim/school web/svg_logos/svg_icons.svg#edit'></use>
+                </svg></td>
+                    </tr>";
+        }
+        echo " </tbody>
+        </table>
+        ";
+    }
+    ?>
+    <!-- <div class="weblogo">
+        <h4 class="form-heading">Available Logos:-</h4>
+        <div class="available-logo">
+            <div class="logo-sec">
+                <input type="radio" name="logo" class="logo-check">
+                <img src="../classes/images/nav-logo.jpg" alt="navlogo">
+            </div>
+            <div class="logo-sec">
+                <input type="radio" name="logo" class="logo-check">
+                <img src="../classes/images/nav-logo.jpg" alt="navlogo">
+            </div>
+            <div class="logo-sec">
+                <input type="radio" name="logo" class="logo-check">
+                <img src="../classes/images/nav-logo.jpg" alt="navlogo">
+            </div>
+            <div class="logo-sec">
+                <input type="radio" name="logo" class="logo-check">
+                <img src="../classes/images/nav-logo.jpg" alt="navlogo">
+            </div>
+        </div>
+    </div> -->
+</div>
+
+
+
+<div class="massage-sec">
+    <h3 class="form-heading">Massages:-</h3>
+    <table id='contact-info'>
+        <thead>
+            <tr>
+                <th>Sl No</th>
+                <th>Name</th>
+                <th>Phone No</th>
+                <th>Email</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id='massages-data'>
+        </tbody>
+    </table>
+</div>
+
+
+
+
+<script src="../assets/admin.js"></script>

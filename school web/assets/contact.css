@@ -1,0 +1,88 @@
+.contact_main_sec{
+    height: 70vh;
+    width: 100%;
+    /* border: 2px solid red; */
+}
+.contact_main_heading{
+    color: white;
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid white;
+    padding: 0 10px;
+}
+.contact_main_sec{
+    display: flex;
+    flex-direction: column;
+}
+.contact_body{
+    /* border: 2px solid red; */
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.contact_quote{
+    /* border: 2px solid green; */
+    width: 70%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 6%;
+    text-align: center;
+}
+.contact_clicker{
+    /* border: 2px solid blue; */
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+}
+/* heading */
+
+/* icons */
+.contact_clicker_div{
+    width: 100%;
+    height:5.5rem ;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    border-radius: 13px;
+    background-color: black;
+    padding: 0.2rem 0.2rem;
+    box-shadow: 0px 0px 10px 1px;
+    color: white;
+}
+.contact_details{
+    color: white;
+}
+.contact_icons{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--svg_bg_color);
+    color: var(--svg_color);
+}
+.contact_svg_icone{
+    width: 2rem;
+    height: 2rem;
+    fill: black ;
+}
+._details{
+    color: white;
+    text-decoration: none;
+}
+.contact_clicker_div{
+    align-items: center;
+    padding: 0 0.5rem;
+    gap: 0.4rem;
+}
