@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculator</title>
+</head>
+
+<body pagename="homepage">
+    <section class="cal-sec">
+        <div class="calculator-body">
+            <div class="cal-display">
+                <input type="text" name="display" id="display" disabled="disabled">
+            </div>
+            <div class="cal-buttons">
+                <div class="row justify-around w-100">
+                    <button class="cal-button" value="AC">AC</button>
+                    <button class="cal-button" value="%">%</button>
+                    <button class="cal-button" value=".">.</button>
+                    <button class="cal-button" value="DE">DE</button>
+                </div>
+                <div class="row  justify-around w-100">
+                    <button class="cal-button" value="9">9</button>
+                    <button class="cal-button" value="8">8</button>
+                    <button class="cal-button" value="7">7</button>
+                    <button class="cal-button mutiply" value="*">
+                        <svg class="svg-icon" viewBox="0 0 320 512">
+                            <path
+                                d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="row justify-around w-100">
+                    <button class="cal-button" value="6">6</button>
+                    <button class="cal-button" value="5">5</button>
+                    <button class="cal-button" value="4">4</button>
+                    <button class="cal-button" value="+">+</button>
+
+                </div>
+                <div class="row justify-around w-100">
+
+                    <button class="cal-button" value="3">3</button>
+                    <button class="cal-button" value="2">2</button>
+                    <button class="cal-button" value="1">1</button>
+                    <button class="cal-button" value="-">-</button>
+                </div>
+
+                <div class="row justify-around w-100">
+
+                    <button class="cal-button" value="00">00</button>
+                    <button class="cal-button" value="0">0</button>
+                 
+                    <button class="cal-button division" value="/">
+                        <svg viewBox="0 0 448 512" class="svg-icon">
+                            <path
+                                d="M256 96a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zm0 320a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM384 288c17.7 0 32-14.3 32-32s-14.3-32-32-32H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H384z" />
+                        </svg>
+                    </button>
+                    <button class="cal-button" value="=">=</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-section">
+        &copy;Copyright 2023, All Rights Reserved
+    </footer>
+    <script src="./main.js"></script>
+</body>
+
+</html>
