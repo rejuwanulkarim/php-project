@@ -1,0 +1,11 @@
+.container {
+  /* border: 2px solid red; */
+}
+.school-name-description {
+  background: url(../images/web_images/home-background.jpg);
+  object-fit: cover;
+  filter: blur(8px);
+  -webkit-filter: blur(8px); 
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
