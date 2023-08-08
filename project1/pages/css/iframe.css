@@ -1,0 +1,436 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.admin_create_page {
+  background-color: rgb(37, 37, 37);
+  color: white;
+  height: 100%;
+  width: 100%;
+  padding: 2rem;
+}
+.important {
+  color: red !important;
+  font-size: 1.2rem;
+}
+.admin_create_form {
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+}
+.admin_create_form label {
+  /* margin-top: 1rem; */
+}
+.admin_create_inputs {
+  height: 1.7rem;
+  width: 19rem;
+  font-size: 1rem;
+  outline: none;
+  border-bottom: 2px solid white;
+  /* border: none; */
+  background-color: rgb(37, 37, 37);
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  color: white;
+  margin-bottom: 1rem;
+  /* border-radius: 10px; */
+  padding: 5px;
+}
+.submit_btn {
+  width: 13rem;
+  height: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  /* border-radius: 10px; */
+}
+.head_create_admin p:first-child {
+  font-size: 2rem;
+}
+
+.head_create_admin {
+  width: 100%;
+  display: flex;
+  flex-direction: revert;
+  justify-content: space-between;
+  border-bottom: 5px solid gray;
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 3rem;
+}
+
+.head_create_admin a {
+  font-size: 1rem;
+  color: red;
+  text-decoration: none;
+}
+.creater_div {
+  border-bottom: 5px solid gray;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+}
+.admin_list_login_div {
+  background-color: rgb(37, 37, 37);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.verify_login_heading {
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+.data_tabel {
+  width: 100%;
+}
+.data_table_head {
+  /* border:2px solid gray */
+}
+.data_table_head_tr {
+  /* border:2px solid red; */
+  background-color: #31595c !important;
+  color: white;
+  /* border-radius: 50%; */
+}
+
+.data_table_head_th {
+  /* border: 2px solid gray; */
+  height: 3rem;
+  text-align: center;
+  border-radius: 20px;
+}
+
+#Password_viewer {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  margin-bottom: 27px;
+  width: 11rem;
+  gap: 3px;
+}
+
+/* action button from admin list  */
+.delete_btn_c {
+  cursor: pointer;
+  width: 50%;
+  color: red;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 0.9rem;
+}
+.edit_btn_c {
+  cursor: pointer;
+  width: 50%;
+  color: blue;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 0.9rem;
+}
+
+.action_buttons {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+}
+
+.delete_hover_span {
+  position: absolute;
+  top: 15px;
+  left: -59px;
+  display: none;
+  /* height: 2rem; */
+  width: 4rem;
+  background: gray;
+  text-align: center;
+  border-radius: 5px;
+  color: black;
+}
+
+.delete_btn_c:hover + .delete_hover_span {
+  display: block;
+}
+
+.delete_hover_span::after {
+  content: "";
+  position: absolute;
+  height: 7px;
+  width: 7px;
+  background-color: gray;
+  color: black;
+  transform: rotate(45deg);
+  top: 6px;
+  right: -3px;
+}
+
+.edit_hover_span {
+  position: absolute;
+  top: 15px;
+  left: -25px;
+  display: none;
+  /* height: 2rem; */
+  width: 4rem;
+  background: gray;
+  text-align: center;
+  border-radius: 5px;
+  color: black;
+}
+
+.edit_hover_span::after {
+  content: "";
+  position: absolute;
+  height: 7px;
+  width: 7px;
+  background-color: gray;
+  color: black;
+  transform: rotate(45deg);
+  top: 6px;
+  right: -3px;
+}
+
+.edit_btn_c:hover + .edit_hover_span {
+  display: block;
+}
+
+.svg_icone {
+  height: 1.4rem;
+}
+
+.delete_icone {
+  fill: red;
+}
+.edit_icone {
+  fill: blue;
+}
+
+/* 8120 */
+
+/* .df{
+  content: "";
+  position: absolute;
+  height: 7px;
+  width: 7px;
+  background-color: gray;
+  color: black;
+  transform: rotate(45deg);
+  top: 6px;
+  right: -3px;
+} */
+.color_red {
+  color: red;
+}
+.color_blue {
+  color: blue;
+}
+
+/* universal class */
+.red {
+  background-color: red !important;
+}
+.green {
+  background-color: green !important;
+}
+.sitename_div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.add_product_input {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  margin-left: 1.2rem;
+  height: 2rem;
+  width: 80%;
+  font-size: 1rem;
+  outline: none;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  color: white;
+}
+
+.product_add_form_lable {
+  font-size: 1.2rem;
+  width: 20%;
+}
+.product_list_form {
+  display: flex;
+  flex-direction: column;
+}
+
+#hide_btn {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.slide_hide {
+  animation-name: slid_right;
+  /* right: -21rem; */
+  display: none;
+
+  animation-fill-mode: backwards;
+}
+@keyframes slid_right {
+  from {
+    right: 0.1rem;
+    /* -webkit-transform: scale(1);  */
+  }
+  to {
+    right: -21rem;
+    /* -webkit-transform: scale(1);  */
+  }
+}
+/* product insert sucess alert and unsucess alert */
+.product_insert_sucess_slider {
+  display: block;
+  height: 3rem;
+  width: 20rem;
+  background-color: green !important;
+  color: white;
+  font-weight: 700;
+  border-radius: 8px;
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  animation: product_slider_in 1.2s;
+}
+.product_success_body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  gap: 0.5rem;
+}
+#slider_hide_btn {
+  cursor: pointer;
+  font-size: 2rem;
+}
+@keyframes product_slider_in {
+  from {
+    right: -20rem;
+  }
+  to {
+    right: 1px;
+  }
+}
+.product_insert_sucess_slider_remover {
+  /* display: block; */
+  height: 3rem;
+  width: 20rem;
+  background-color: green !important;
+  color: white;
+  font-weight: 700;
+  border-radius: 8px;
+  position: absolute;
+  top: 1px;
+  right: -20rem;
+  animation: product_slider_out 1.2s;
+}
+@keyframes product_slider_out {
+  from {
+    right: 1px;
+  }
+  to {
+    right: -20rem;
+  }
+}
+.unsuccess_slider_color{
+  /* color: ; */
+  background-color: red !important;
+}
+
+/* admin data edit modal section */
+
+.admin_edit_modal {
+  height: 39rem;
+  width: 25rem;
+  border: 2px solid red;
+  margin: auto;
+  background-color: green;
+  position: absolute;
+  top: 2.5rem;
+}
+
+.admin_edit_body {
+  border: 2px solid green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.data_edit_input {
+  width: 90%;
+  height: 2rem;
+  border-top: none;
+  /* border-bottom: none; */
+  outline: none;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 1.5rem;
+  color: black;
+  letter-spacing: 2px;
+  border-radius: 9px;
+}
+
+.data_edit_lable {
+  font-size: 1.3rem;
+  position: relative;
+  left: 1px;
+}
+
+.data_edit_btn {
+  width: 90%;
+  height: 2rem;
+  border: none;
+  background: #1cab38;
+  border-radius: 10px;
+  font-size: 1.4rem;
+  color: white;
+  margin-bottom: 1.2rem;
+  cursor: pointer;
+}
+/* update product video animetion styleing */
+.product_update_animetion_section {
+  height: 100vh;
+  width: 100%;
+  margin: auto;
+}
+
+.product_anim_video {
+  display: flex;
+  height: 100%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 404 error style */
+.error_body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background:repeating-radial-gradient(black, transparent 100px);
+ 
+}
+
+.error_heading {
+  font-size: 8rem;
+  color: gray;
+  font-weight: bolder;
+}
