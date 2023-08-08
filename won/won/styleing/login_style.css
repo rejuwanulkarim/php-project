@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    /* border: 2px solid red; */
+}
+
+body {
+    background: linear-gradient(rgba(15, 13, 13, 0.6), rgba(38, 35, 35, 0.7)), url(../homepage/bodybg.jpg);
+    color: white;
+}
+
+/* Alert style*/
+
+.alert {
+    padding: 20px;
+    background-color: green;
+    color: white;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
+
+
+.container {
+    /* border: 2px solid red; */
+    border-radius: 12px;
+    display: flex;
+    margin: 149px auto;
+    box-shadow: 4px 5px 41px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 26em;
+    width: 23em;
+    /* color: aliceblue; */
+}
+
+.login-input {
+    /* border: none; */
+    display: flex;
+    flex-grow: 2;
+    width: 301px;
+    height: 28px;
+    margin: 10px auto;
+    /* border:  4px 0 dotted white; */
+    /* border-bottom: rgb(173, 33, 33); */
+    /* background-color: black; */
+    border-radius: 5px;
+    /* color: aliceblue; */
+    box-shadow: 4px 5px 20px;
+}
+
+#login-header {
+    text-align: center;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+#submit-btn {
+    height: 45px;
+    width: 301px;
+    font-size: 17px;
+    background: #1877f2;
+    color: white;
+    border-radius: 9px;
+    cursor: pointer;
+    border: none;
+}
+
+#login-form {
+    border: 2px solid green;
+    display: flex;
+
+}
+
+#invalid_pass_para {
+    margin-top: 8px;
+    font-size: 14px;
+    color: red;
+}
+
+/* .alert {
+    padding: 20px;
+    width: 407px;
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .closebtn:hover {
+    color: black;
+  } */

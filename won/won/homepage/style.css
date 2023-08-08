@@ -1,0 +1,166 @@
+
+
+/* this is for main section css styleing */
+.main_section {
+    /* border: 2px solid red; */
+    height: 36rem;
+    width: 100%;
+    background: linear-gradient(rgb(0, 0, 0, 0.6), rgba(68, 67, 67, 0.7)), url(bodybg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* filter: blur(2px);opa */
+    /* opacity: 0.7; */
+}
+
+.Enrol_corses {
+    /* position: relative; */
+    border: 2px solid white;
+    text-align: center;
+    padding: auto;
+    margin: auto;
+    width: 56rem;
+    padding: 21px;
+    line-height: 21px;
+    letter-spacing: 2px;
+    /* background-image: url(https://th.bing.com/th/id/R.3d4bb9bb66b1b8c3eed05e61e92ab2ee?rik=DgwhN8oyiN%2bRdA&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f7%2f0%2f9%2f1090031-widescreen-cool-tech-backgrounds-1920x1080-for-htc.jpg&ehk=PPP0%2b7H1CGC%2fe5Gn4rrYZPQni1C0SyD8SKm%2fUMKC5mo%3d&risl=&pid=ImgRaw&r=0); */
+}
+
+.Enrol_corses p {
+    font: 13px;
+    text-align: center;
+    padding: 9px;
+    display: flex;
+    justify-content: center;
+}
+
+.Enrol_corses #enrol_btn {
+    height: 35px;
+    width: 125px;
+    border-radius: 8px;
+    padding: 10px;
+    border: none;
+    margin: auto;
+    cursor: pointer;
+    color: black;
+    background: white;
+    transition: ease-in;
+    transition-duration: 0.8s;
+}
+
+.Enrol_corses #enrol_btn:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    /* width: 130px;
+height: 39px; */
+    padding: 10px;
+}
+
+/* this is the comment box styleing */
+
+.comment_sec {
+    /* border: 2px solid yellowgreen; */
+    height: 33rem;
+    width: auto;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    background-image: url();
+    background: linear-gradient(rgba(15, 13, 13, 0.6), rgba(38, 35, 35, 0.7)), url(bodybg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.comment_sec form {
+
+    border: 2px solid white;
+    width: 45rem;
+    height: 32rem;
+    background-color: rgb(59, 58, 58);
+}
+
+.comment_form {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    /* border-bottom: 2px dotted #000; */
+    width: 23.5rem;
+    height: 2rem;
+    border-radius: 10px;
+    letter-spacing: 5px;
+    text-align: center;
+    font-size: 16px;
+    /* position: relative; */
+    margin: 12px 0px 12px 133px;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+
+    position: relative;
+    right: -28px;
+    align-items: center;
+    top: 28px;
+}
+
+#comment_box {
+    height: 9rem;
+    width: 24rem;
+    border-radius: 5px;
+    margin: 12px 0px 12px 133px;
+    bottom: -24px;
+    position: relative;
+    left: -31px;
+}
+
+
+.comment_box_label {
+    color: #fff;
+    display: inline;
+    justify-content: left;
+    position: relative;
+    left: 41px;
+    top: 65px;
+    font-size: 23px;
+    /* align-items:; */
+}
+
+.comment_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#qury {
+    position: relative;
+    left: 41px;
+    top: -67px;
+}
+
+
+#form_submit_btn {
+    position: relative;
+    height: 35px;
+    margin: 12px auto;
+    width: 124px;
+    display: block;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    top: 1rem;
+    transition: ease-in-out;
+    transition-duration: 0.8s;
+}
+
+#form_submit_btn:hover {
+    color: white;
+    background-color: rgb(58, 57, 57);
+    border: 1px solid white;
+}
+
+/* This styleing for footer */

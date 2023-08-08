@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+header {
+    /* border: 2px solid purple; */
+    position: sticky;
+    top: 0;
+    /* border: 2px solid purple; */
+    display: flex;
+    height: 4rem;
+    background-color: #a3b1bc;
+    align-items: center;
+    /* position: fixed; */
+    /* position: fixed; */
+    top: 13;
+    background-color: #939193;
+}
+
+#nav {
+    position: absolute;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    padding: 0px;
+    font-size: 18px;
+    color: black;
+}
+
+#nav h1 {
+    text-align: center;
+    margin: 11px 38rem;
+}
+
+
+
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    overflow: scroll;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    background-color: lightgreen;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+#delBtn {
+    height: 23px;
+    height: 24px;
+    width: 85px;
+    font-size: 15px;
+    color: white;
+    background-color: #1877f2;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#comment-delBtn{
+    height: 23px;
+    height: 24px;
+    width: 85px;
+    font-size: 15px;
+    color: white;
+    background-color: #1877f2;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+#users-admin-table{
+    height: 22rem;
+    width: 75rem;
+    margin: auto;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    
+}
+#user-comment-table{
+    height: 22rem;
+    width: 75rem;
+    margin: auto;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+}
+
+/* footer {
+    position: sticky; 
+     bottom: 0;
+} */
+
+
+footer {
+    height: 5rem;
+    width: 100%;
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #939193;
+    position: fixed; 
+     bottom: 0;
+}
+
+footer p {
+    margin: auto;
+    padding: 0;
+    font-size: 1rem;
+    color: white;
+}
+/* body{
+  
+
+} */

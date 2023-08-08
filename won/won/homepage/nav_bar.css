@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Stoke:wght@300&display=swap');
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+header {
+    /* border: 2px solid purple; */
+    /* display: flex; */
+    /* height: 3.5rem; */
+    background-color: #a3b1bc;
+    /* position: fixed; */
+    position: sticky;
+    top: 0;
+}
+
+.header-div {
+    /* height: 100%;
+    width: 100%; */
+    display: flex;
+    justify-content: space-between;
+}
+/* #logo p{
+    color: red;
+} */
+#logo a{
+   text-decoration: none;
+}
+
+#logo {
+    /* border: 2px solid yellow; */
+    border: 5px solid white;
+    /* position: absolute; */
+    left: 34px auto;
+    height: 3rem;
+    width: 153px;
+    margin-left: 0.5em;
+
+
+    overflow: hidden;
+    border-radius: 146px 129px;
+
+}
+
+
+#logo img {
+    height: 3rem;
+    border-radius: 50%;
+}
+
+ #logo b{
+    font-family: 'Stoke', serif;
+    text-decoration: none;
+    font-size: 18px;
+    margin: auto;
+    padding-top: 1px;
+    color: #dc2a2a;
+    overflow: hidden;
+}
+
+
+
+#nav ul {
+    list-style-type: none;
+}
+
+#nav ul li {
+    display: inline;
+    padding: 5px;
+}
+
+#nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+#nav ul li a:hover {
+    color: red;
+}
+
+/* .login {
+    display: inline;
+}
+
+.btn {
+    display: inline-block;
+
+} */
+
+.login-btn{
+    height: 2em;
+    width: 5em;
+    border-radius: 8px;
+    font-size: 0.8em;
+    margin-left: 5px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition-duration: 2s;
+    border: none;
+}
+
+.login-btn:hover {
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    border: none;
+
+}
