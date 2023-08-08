@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type='text' id="input_text">
+    <button id="btn" onclick="func()">hello</button>
+
+    <a href='' id="anchor">Download</a>
+    <script>
+
+        let btn = document.getElementById('btn');
+        function func() {
+            // alert('kjdakj')
+            let anchor = document.getElementById('anchor');
+            let url = document.getElementById('input_text').value;
+            // console.log(url)
+            anchor.setAttribute("href", '#')
+            anchor.setAttribute("download", url+'.mp4')
+
+        }
+
+    </script>
+</body>
+
+</html>
