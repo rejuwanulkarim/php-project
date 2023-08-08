@@ -1,0 +1,36 @@
+nav {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+	gap: 3em;
+	padding: 30px;
+}
+
+nav a {
+	width: 4em;
+	height: 4em;
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: 0 5px 15px #0002;
+	color: var(--c);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all .3s;
+}
+
+nav a>svg {
+	width: 2.5em;
+	height: 2.5em;
+	transition: all .3s;
+}
+
+nav a:hover {
+	transform: scale(1.2);
+	background-color: var(--c);
+}
+
+nav a:hover>svg {
+	color: white;
+}
