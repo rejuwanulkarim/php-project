@@ -1,0 +1,334 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: aqua;
+  overflow: hidden;
+}
+.admin_create_inputs {
+  height: 1.7rem;
+  width: 19rem;
+  font-size: 1rem;
+  outline: none;
+  border-bottom: 2px solid white;
+  /* border: none; */
+  background-color: rgb(37, 37, 37);
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  color: white;
+  margin-bottom: 1rem;
+  /* border-radius: 10px; */
+  padding: 5px;
+}
+.submit_btn {
+  width: 13rem;
+  height: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  /* border-radius: 10px; */
+}
+
+.admin_list_login_div {
+  background-color: rgb(37, 37, 37);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.verify_login_heading {
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+/* admin page style */
+
+.main {
+  border: 2px solid red;
+  height: 100vh;
+  width: 100vw;
+}
+.heading {
+  border: 2px solid green;
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  object-fit: cover;
+  font-size: 4rem;
+}
+.body {
+  border: 2px solid black;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+}
+.left {
+  border: 2px solid purple;
+  height: 100%;
+  width: 20%;
+}
+.right {
+  border: 2px solid orangered;
+  height: 100%;
+  width: 80%;
+  background-color: white;
+  overflow-y: scroll;
+}
+.side_ul {
+  list-style-type: none;
+}
+.side_li {
+  font-size: 1.2rem;
+  height: 3rem;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.anchor_link {
+  text-decoration: none;
+  /* color: rgb(128, 128, 128); */
+  color: #37784ced;
+  font-weight: bold;
+}
+/* bank documents section style */
+.banksection {
+  height: 100%;
+  width: 100%;
+}
+.images_body {
+  border: 2px solid green;
+  height: 8rem;
+  width: 14rem;
+  position: relative;
+  transition: 1s;
+}
+.image_name {
+  /* position: absolute; */
+  height: 1.5rem;
+  /* background-color: rgba(128, 128, 128, 0.544); */
+  color: black;
+  font-weight: bolder;
+  font-size: 0.8rem;
+  width: 100%;
+  padding-left: 5px;
+  padding-top: 3px;
+}
+.images_downloadbar {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #00efff80;
+  align-items: center;
+  height: 2rem;
+}
+.svg_logo {
+  width: 36px;
+  height: 22px;
+}
+.svg_fill_red {
+  fill: red; /*universal class*/
+}
+.svg_fill_37784ced {
+  fill: #37784ced; /*universal class*/
+}
+.red {
+  color: red; /*universal class*/
+}
+
+.images {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.pointer {
+  cursor: pointer; /*universal class*/
+}
+
+.banksection {
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  margin: auto;
+  padding: 10px;
+  /* grid-template-rows: repeat(1000, 8rem); */
+}
+
+.welcomeDiv {
+  /* width: 100%; */
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 7rem;
+}
+.svg_fill_blue {
+  fill: blue;
+}
+
+/* document upload  sections */
+
+.document_upload_section {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(37, 37, 37);
+}
+
+.documents_type_selector {
+  margin-top: 1rem;
+  display: flex;
+  /* justify-content: ; */
+  align-items: center;
+  /* flex-direction: column; */
+}
+
+#document_type {
+  height: 2rem;
+  width: 13rem;
+  font-size: 1.1rem;
+  border: 2px solid gray;
+  border-radius: 12px;
+  padding: 5px;
+  background: transparent;
+}
+
+.document_upload_heading {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem;
+  border-bottom: 2px solid white;
+  color: white;
+}
+
+.doument_select {
+  font-size: 1.1rem;
+  font-weight: bolder;
+}
+.upload_input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1rem;
+}
+.document_selector_label {
+  font-size: 1.1rem;
+  font-weight: bolder;
+}
+.doc_name_input {
+  background: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid white;
+  width: 12rem;
+  outline: none;
+}
+.input{/*Universal class for any input field*/
+  background: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid white;
+  width: 12rem;
+  outline: none;
+  color: white;
+}
+.doc_name {
+  font-size: 1.1rem;
+  font-weight: bolder;
+  margin-top: 1rem;
+}
+.document_input {
+  width: 12rem;
+  /* border-radius: 16px; */
+  border: none;
+  outline: none;
+  background: transparent;
+  font-weight: bold;
+}
+
+.form_innerside {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid white;
+  width: 25rem;
+  height: 15rem;
+  margin: auto;
+  border-radius: 12px;
+  padding: 5px;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+.form_alert {
+  color: red;
+  text-align: center;
+  font-style: italic;
+  font-weight: bolder;
+}
+.submit {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.white {
+  color: white;
+}
+
+
+/* user create style  */
+.user_create{
+  display: flex;
+  flex-direction: column;
+  border: 2px solid white;
+  width: 25rem;
+  margin: auto;
+  border-radius: 12px;
+  padding: 5px;
+
+}
+/* image delete button style */
+
+.delete_btn{
+  width: 4rem;
+  position: absolute;
+  color: white;
+  background-color: red;
+  border-radius: 10px;
+  text-align: center;
+  right: 0;
+  cursor: pointer;
+  
+}
+.full_screen_btn{
+  width: 4rem;
+  position: absolute;
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  left:  0;
+  cursor: pointer;
+}
+.images_body:hover{
+height: 14rem;
+width: 14rem;
+z-index: 10;
+}
+
+
+
